@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "build-release-task",
+    "name": "ADM Regular Expression Utility",
+    "version": "0.1.3",
+    "publisher": "AntonioDiMotta",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for building/releasing. Includes one build/release task.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "files": [
+        {
+            "path": "admRegExp"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "admRegExp"
+            }
+        }
+    ]
+}
